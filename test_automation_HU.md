@@ -221,3 +221,4 @@ Az API tesztelés a program API-ait teszteli le több szempont alapján. Ezek k�
 Az adatvezérelt tesztelés (Data-Driven Testing, DDT) egy tesztelési módszer, amelyben a tesztelési lépések egyetlen szkriptben vagy programban vannak megírva, de a különböző tesztesetek adatait különböző adatforrásokból (például Excel, CSV fájl, adatbázis vagy XML) töltjük be.<br>
 Ahelyett, hogy minden tesztesetet külön kóddal írunk meg, ugyanazt a tesztlogikát használjuk, és különböző bemeneti adatokkal futtatjuk le azt, így egyszerre több esetre tudjuk alkalmazni.
 
+

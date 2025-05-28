@@ -206,9 +206,18 @@ Gyakori hibák:
 - InvalidSelectorException: A CSS vagy XPath szelektor hibás vagy érvénytelen.
 
 #### ✅ Hasonlítsd össze a POM és a Keyword Driven Testing megközelítéseket!
+A POM-alapú megközelítés az oldal objektumait és elemit használja fel a tesztesetekhez. Ezeket könnyebben lehet újra felhasználni és jobban átláthatóbbak, de az esetek megírásához programozási tudás szükséges.<br>
+
+A Keyword Driven Testing megközelítés kulcsszavakat használ a tesztesetekben (például Click, EnterText). Megírásukhoz nem feltétlenül szükséges programozási tudás.
 
 #### ✅ Mi a különbség a TDD és BDD között?
+- TDD: tesztalapú fejlesztés. Automatizált teszteseteket ír meg a fejlesztő a szoftver lefejlesztése előtt és azokra alapozva írja meg a programot. Kódalapú a működése, ezért a fejlesztők használják.
+- BDD: viselkedésalapú fejlesztés. Természetes nyelven írja le a várt eredményt, ezért nem csak fejlesztők használják, hanem például üzleti döntéshozók is.
 
 #### ✅ Mi az API tesztelés és miért hasznos?
+Az API tesztelés a program API-ait teszteli le több szempont alapján. Ezek közé tartozik a kérések és a kapott válaszok ellenőrzése, megfelelő adatot küld-e vissza a kérésekre, biztonsági és teljesítményi szempontok. Az API-k fontos részei a programnak, melyek lehetővé teszik más programoknak, hogy lekérjék a megfelelő adatokat az eredeti program API-i segítségével. Ezek mellett könnyebben írhatóak tesztesetek az API teszteléséhez.
 
 #### ✅ Mi az adatvezérelt tesztelés és miért hasznos?
+Az adatvezérelt tesztelés (Data-Driven Testing, DDT) egy tesztelési módszer, amelyben a tesztelési lépések egyetlen szkriptben vagy programban vannak megírva, de a különböző tesztesetek adatait különböző adatforrásokból (például Excel, CSV fájl, adatbázis vagy XML) töltjük be.<br>
+Ahelyett, hogy minden tesztesetet külön kóddal írunk meg, ugyanazt a tesztlogikát használjuk, és különböző bemeneti adatokkal futtatjuk le azt, így egyszerre több esetre tudjuk alkalmazni.
+

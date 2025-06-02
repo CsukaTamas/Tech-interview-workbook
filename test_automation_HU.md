@@ -221,4 +221,41 @@ Az API tesztelés a program API-ait teszteli le több szempont alapján. Ezek k�
 Az adatvezérelt tesztelés (Data-Driven Testing, DDT) egy tesztelési módszer, amelyben a tesztelési lépések egyetlen szkriptben vagy programban vannak megírva, de a különböző tesztesetek adatait különböző adatforrásokból (például Excel, CSV fájl, adatbázis vagy XML) töltjük be.<br>
 Ahelyett, hogy minden tesztesetet külön kóddal írunk meg, ugyanazt a tesztlogikát használjuk, és különböző bemeneti adatokkal futtatjuk le azt, így egyszerre több esetre tudjuk alkalmazni.
 
+#### ✅ Mik a kihívások és ajánlott eljárások a dinamikusan betöltött webes elemekkel?
+A dimanikusan betöltődő webes elemek (pl. JavaScript vagy AJAX által betöltött elemek az oldal eredeti betöltése után) új kihívásokat vezetnek be a szoftvertesztelésben, különösen az automatizált UI tesztelés során.
 
+Kihívások:
+- Időzítési problémák/szinkronizáció
+- Ingadozó (flaky) tesztek
+- Elavult (stale) elem hivatkozások
+- Komplex vagy instabil lokátorok
+- Aszinkron viselkedés
+- Rejtett vagy késleltetve betöltődő (lazy-loaded) elemek
+
+Ajánlott eljárások:
+- Explicit várakoztatások használata: Például a javascriptes sleep() helyett érdemes a tesztelési keretrendszer által biztosított várakoztatási elemeket használni (pl.: Selenium: WebDriverWait, ExpectedConditions).
+- Fix várakoztatások elkerülése
+- Stabil lokátorok használata: például data-testid vagy aria-label attribútumok használata és az XPath helyett érdemes CSS-lokátorok használni
+- A láthatóság és az interakcióképesség ellenőrzése: az elem legyen látható és elérhető is
+- Automatikus újrapróbálás (retry logic) implementálása
+- Page Object Model struktúra használata
+
+
+#### ✅ Mik a mobil tesztautomatizálás kihívásai?
+A mobil tesztautomatizálás számos kihívással rendelkezik, amik nem jellemzőek az asztali, vagy a webes tesztautomatizálásnál.
+Ezek a kihívások:
+- Rengeteg különböző eszköz és operációs rendszer jelenléte a mobilos piacon
+- Sok eltérő UI és képernyőfelbontás
+- Bonyolultabbak a tesztelési eszközök és keretrendszerek, mint a webes társaiknál
+- Gyakran lassabban futnak le a tesztek a mobileszközökön
+- Gesztusok és szenzorok kezelése
+- Ingadozó (flaky) tesztek, szinkronizációs hibák
+- Engedélykérések és egyéb rendszerüzenetek lekezelése
+
+## Haladó témák
+<img src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/05/DevOps-in-a-Selenium-Testing.png" alt="image" width="320" height="220">
+
+#### ✅ Mi a különbség a CI és CD között?
+#### ✅ Írj le egy Continuous Delivery folyamatot!
+#### ✅ Hasonlítsd össze két népszerű CI rendszert, ezek közül az egyik legyen a Jenkins!
+#### ✅ Mi a Docker és miért hasznos?

@@ -256,6 +256,52 @@ Ezek a kihívások:
 <img src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/05/DevOps-in-a-Selenium-Testing.png" alt="image" width="320" height="220">
 
 #### ✅ Mi a különbség a CI és CD között?
+- CI – Continuous Integration:<br>
+A CI a több fejlesztőtől származó kódmódosítások automatikus, gyakori (általában naponta többszöri) integrálásának gyakorlata egy közös tárolóba.
+- CD – Continuous Delivery vagy Continuous Deployment:  
+  - Continuous Delivery:<br>
+  Az alkalmazás automatikusan elkészül, tesztelésre és csomagolásra kerül, és készen áll a kézi telepítésre a termelésbe.
+  - Continuous Deployment:<br>
+  Minden sikeres kódváltozás, amely átmegy az automatizált tesztelésen, automatikusan, kézi jóváhagyás nélkül bekerül a termelésbe.
+
+
 #### ✅ Írj le egy Continuous Delivery folyamatot!
+A Continuous Delivery egy szoftverfejlesztési gyakorlat, amely során a kódváltozások automatikusan tesztelésre kerülnek és kiadásra kész állapotba kerülnek. Habár maga a bevezetés manuálisan történik meg, a folyamat többi része teljesen automatizálva van.
+
 #### ✅ Hasonlítsd össze két népszerű CI rendszert, ezek közül az egyik legyen a Jenkins!
+Jenkins (népszerű, nyílt forráskódú CI eszköz) és a GitHub Actions (GitHub-ba integrált, modern CI/CD megoldás) összehasonlítása:
+- Típus:<br>
+  - Jenkins: Helyi üzemeltetésű vagy felhőalapú, nyílt forráskódú rendszer
+  - GitHub Actions: Teljesen felhőalapú
+- Beállítás:<br>
+  - Jenkins: Manuális telepítés és beállítás
+  - GitHub Actions: GitHub-ba integrált eszköz
+- Konfiguráció:<br>
+  - Jenkins: Jenkinsfile (Groovy syntax), GUI pipelines
+  - GitHub Actions: YAML-fájlok itt: .github/workflows/
+- Integráció:<br>
+  - Jenkins: Bármilyen VCS-t támogat (Git, SVN, Mercurial, stb.)
+  - GitHub Actions: Legjobb működés a GitHub repository-kal
+- Pluginok:<br>
+  - Jenkins: 1800+ közösségi plugin
+  - GitHub Actions: Kevesebb plugin
+- Biztonság:<br>
+  - Jenkins: Manuális beállítást igényel
+  - GitHub Actions: A GitHub biztonsági megoldásait használja
+- Ár:<br>
+  - Jenkins: Ingyenes (helyi), de gondoskodni kell a karbantartásról
+  - GitHub Actions: Ingyenes nyilvános repoknál, privát repoknál fizetős
+- Kiknek javasolt:<br>
+  - Jenkins: Nagyobb vállalatok
+  - GitHub Actions: Startupok, hobbi projektek
+
 #### ✅ Mi a Docker és miért hasznos?
+Egy nyílt forráskódú platform, ami lehetővé teszi a fejlesztőknek alkalmazások készítését és futtatását külön konténerekben. A konténer egy könnyű és futtatható szoftvercsomag, ami mindent tartalmaz, ami kellhet egy alkalmazás futtatásához (kód, runtime, függőségek, konfigurációs fájlok, stb.).
+
+Ezért hasznos:
+- Megoldja a "működik-e a gépemen" problémát - bármilyen környezetben ugyanúgy fut az alkalmazás
+- Környezeti izoláció: minden konténer teljesen izolálva fut, ezzel több alkalmazást (különböző verziókkal) lehet futtatni ugyanazon a rendszeren kompatibilitási gondok nélkül
+- Gyorsaság és hatékonyság (gyorsabb a virtuális gépeknél)
+- CI/CD integráció
+- Hordozhatóság
+- Könnyebben lehet tesztelni
